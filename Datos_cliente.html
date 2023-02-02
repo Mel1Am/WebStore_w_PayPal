@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd Store</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="img/logo.png" alt="Logotipo">
+        </a>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Store</a>
+        <a class="navegacion__enlace" href="nosotros.html">About</a>
+    </nav>
+
+<main class="contenedor">
+        <h1>Personal Information</h1>
+
+        <div>
+            <div style="max-width: 300px; margin: auto;">
+
+            <form method="POST" action="form.php">
+
+                <p>
+                    <label for="fname">First Name </label>
+                    <input type="text" name="fname" id="fname">
+                </p>
+                <p>
+                    <label for="lname">Last Name </label>
+                    <input type="text" name="lname" id="lname">
+                </p>
+                <p>
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email">
+                </p>
+                <p>
+                    <label for="Pnumber">Phone Number</label>
+                    <input type="number" name="PhoneNumber" id="Pnumber">
+                </p>
+
+                <h2>Please enter your Shipping Address</h2>
+                <p>
+                    <label for="Street">Street</label>
+                    <input type="text" name="PhoneNumber" id="Street">
+                </p>
+                <p>
+                    <label for="Zip">Zip</label>
+                    <input type="number" name="PhoneNumber" id="Zip">
+                </p>
+                <p>
+                    <label for="State">State</label>
+                    <input type="text" name="PhoneNumber" id="State">
+                </p>
+                <p>
+                    <label for="Country">Country</label>
+                    <input type="text" name="PhoneNumber" id="Country">
+                </p>
+
+                <p>
+                    <input type="submit" name="submit" id="submit" value="Submit">
+                </p>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__texto">Front End Store - Todos los derechos Reservados 2022.</p>
+    </footer>
+    
+</body>
+</html>
