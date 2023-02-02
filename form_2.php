@@ -2,15 +2,12 @@
     // getting all values from the HTML form
     if(isset($_POST['submit']))
     {
-        $fname = $_POST['fname'];
-        $lname = $_POST['lname'];
-        $email = $_POST['email'];
-        $Pnumber = $_POST['Pnumber'];
+
         //Shipping Address Variables
-        //$Street = $_POST['Street'];
-        //$Zip = $_POST['Zip'];
-        //$State = $_POST['State'];
-        //$Country = $_POST['Country'];
+        $Street = $_POST['Street'];
+        $Zip = $_POST['Zip'];
+        $State = $_POST['State'];
+        $Country = $_POST['Country'];
 
 
     }
@@ -31,7 +28,7 @@
     }echo "Connected successfully";
 
     // using sql to create a data entry query
-    $sql = "INSERT INTO Client (Fname, Lname, Email, PNumber) VALUES ('$fname', '$lname', '$email', '$Pnumber')";
+    $sql = "INSERT INTO Addresses (Fname, Lname, Email, PNumber) VALUES ('$fname', '$lname', '$email', '$Pnumber')";
     //$sql = "INSERT INTO Addresses (Street, ZipCode, State, Country) VALUES ('$Street', '$Zip', '$State', '$Country')";
 
     // send query to the database to add values and confirm if successful
