@@ -68,8 +68,37 @@
         <a class="navegacion__enlace" href="nosotros.html">About</a>
     </nav>
 
-<main class="contenedor">
-        <h1>Thank you for Purchasing With Us!</h1>
+    <main class="contenedor">
+        <h1>Personal Information</h1>
+
+        <div>
+            <div style="max-width: 300px; margin: auto;">
+
+            <form method="POST" action="form_2.php">
+
+                <h2>Please enter your Shipping Address</h2>
+                <p>
+                    <label for="Street">Street</label>
+                    <input type="text" name="Street" id="Street">
+                </p>
+                <p>
+                    <label for="Zip">Zip</label>
+                    <input type="number" name="Zip" id="Zip">
+                </p>
+                <p>
+                    <label for="State">State</label>
+                    <input type="text" name="State" id="State">
+                </p>
+                <p>
+                    <label for="Country">Country</label>
+                    <input type="text" name="Country" id="Country">
+                </p>
+
+                <p>
+                    <input type="submit" name="submit" id="submit" value="Submit">
+                </p>
+            </form>
+        </div>
     </main>
 
     <footer class="footer">
