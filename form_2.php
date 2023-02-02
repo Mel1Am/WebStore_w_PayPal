@@ -28,8 +28,8 @@
     }echo "Connected successfully";
 
     // using sql to create a data entry query
-    $sql = "INSERT INTO Addresses (Fname, Lname, Email, PNumber) VALUES ('$fname', '$lname', '$email', '$Pnumber')";
-    //$sql = "INSERT INTO Addresses (Street, ZipCode, State, Country) VALUES ('$Street', '$Zip', '$State', '$Country')";
+    //$sql = "INSERT INTO Addresses (Fname, Lname, Email, PNumber) VALUES ('$fname', '$lname', '$email', '$Pnumber')";
+    $sql = "INSERT INTO Addresses (Street, ZipCode, State, Country) VALUES ('$Street', '$Zip', '$State', '$Country')";
 
     // send query to the database to add values and confirm if successful
     $rs = mysqli_query($con, $sql);
