@@ -1,0 +1,28 @@
+
+
+<form id="payment-form" action="pay.php" method="post">
+    <input type="text" name="amount" value="100">
+    <input type="submit" value="Pay with PayPal">
+  </form>
+  
+  <script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID">
+  </script>
+  <script>
+    paypal.Buttons({
+      createOrder: function(data, actions) {
+        return actions.order.create({
+          purchase_units: [{
+            amount: {
+              value: document.querySelector('input[name="amount"]').value
+            }
+          }]
+        });
+      },
+      onApprove: function(data, actions) {
+        return actions.order.capture().then(function(details) {
+          document.querySelector('form').submit();
+        });
+      }
+    }).render('#payment-form');
+  </script>
+  
